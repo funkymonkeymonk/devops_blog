@@ -1,0 +1,14 @@
+sudo: required
+
+language: bash
+
+services:
+  - docker
+
+before_install:
+  - make build
+  - make test
+  - make deliver
+
+script:
+  - make deploy
