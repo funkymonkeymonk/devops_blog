@@ -28,7 +28,7 @@ build: pull
 
 run: build
 	@docker run -it --rm \
-		-p 8000:8000 \
+		-p 80:80 \
 		-h $(project_name) \
 		--name $(project_name)_run \
 		$(org_name)/$(project_name)
